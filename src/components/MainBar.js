@@ -10,7 +10,7 @@ function MainBar() {
             <Container>
                 <Navbar.Brand href="#home">
                 <img
-                    src={require('../assets/img/logo_uno.png')}
+                    src={require('../assets/img/logo_tres.png')}
                     width="70"
                     height="70"
                     className="d-inline-block align-top"
