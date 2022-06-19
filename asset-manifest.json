@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tucompu/static/css/main.073c9b0a.css",
-    "main.js": "/tucompu/static/js/main.31d25790.js",
-    "static/js/787.878be043.chunk.js": "/tucompu/static/js/787.878be043.chunk.js",
-    "static/media/logo.svg": "/tucompu/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/tucompu/index.html",
-    "main.073c9b0a.css.map": "/tucompu/static/css/main.073c9b0a.css.map",
-    "main.31d25790.js.map": "/tucompu/static/js/main.31d25790.js.map",
-    "787.878be043.chunk.js.map": "/tucompu/static/js/787.878be043.chunk.js.map"
+    "main.css": "/tucompu2/static/css/main.073c9b0a.css",
+    "main.js": "/tucompu2/static/js/main.718a1373.js",
+    "static/js/787.878be043.chunk.js": "/tucompu2/static/js/787.878be043.chunk.js",
+    "static/media/logo.svg": "/tucompu2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/tucompu2/index.html",
+    "main.073c9b0a.css.map": "/tucompu2/static/css/main.073c9b0a.css.map",
+    "main.718a1373.js.map": "/tucompu2/static/js/main.718a1373.js.map",
+    "787.878be043.chunk.js.map": "/tucompu2/static/js/787.878be043.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.31d25790.js"
+    "static/js/main.718a1373.js"
   ]
 }
