@@ -1,6 +1,7 @@
 import './MainBar.css';
 //import Logo from '../assets/img/gestadata_icon.png';
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
+import CartWidget from './CartWidget';
 
 function MainBar() {
     return (
@@ -18,7 +19,7 @@ function MainBar() {
                 />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav" className="font">
                     <Nav className="me-auto" >
                         <Nav.Link href="#portatiles">Portatiles</Nav.Link>
                         <Nav.Link href="#celulares">Celulares/Tablets</Nav.Link>
@@ -33,8 +34,12 @@ function MainBar() {
                             <Nav.Link href="#tienda">Tienda</Nav.Link>
                             <Nav.Link href="#nosotros">Nosotros</Nav.Link>
                         </Nav>
+                        <Nav>
+                            <Nav.Link href="#cartProd"><CartWidget /></Nav.Link>
+                        </Nav>
                 </Navbar.Collapse>
             </Container>
+            
         </Navbar>
         </header>
     );
