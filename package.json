@@ -2,7 +2,7 @@
   "name": "tucompu",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://olaya82.github.io/tucompu2/",
+  "homepage": "https://olaya82.github.io/tucompu/",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
