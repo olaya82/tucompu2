@@ -23,11 +23,11 @@ function MainBar() {
                     <Nav className="me-auto" >
                         <Nav.Link href="#portatiles">Portatiles</Nav.Link>
                         <Nav.Link href="#celulares">Celulares/Tablets</Nav.Link>
-                            <NavDropdown title="Componentes PC" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Motherboard</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Memorias</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Microprocesadores</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">Placas de Video</NavDropdown.Item>
+                            <NavDropdown title="Componentes PC" id="basic-nav-dropdown" className="font">
+                                <NavDropdown.Item href="#action/3.1" className="font">Motherboard</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2" className="font">Memorias</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3" className="font">Microprocesadores</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.4" className="font">Placas de Video</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.5">Accesorios/Otros</NavDropdown.Item>
                             </NavDropdown>

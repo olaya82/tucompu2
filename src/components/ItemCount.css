@@ -1,0 +1,13 @@
+.contador {
+    background-color:rgb(235, 233, 233);
+    color: gray;
+    border-radius: 3px;
+    width: 40px;
+    height: 32px;
+    padding-top: 4px;    
+}
+
+.fondo {
+    background-color: white;
+}
+

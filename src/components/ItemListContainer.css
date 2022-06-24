@@ -1,6 +1,18 @@
 .font {
-    font-size: 30px;
+    font-size: 20px;
     color: #6c757d;
-
 }
 
+.espacio {
+    padding-bottom: 10px;
+}
+
+.stock {
+    background-color:rgb(235, 233, 233);
+    color: gray;
+    border-radius: 5px;
+    width: auto;
+    height: 38px;
+    border: 0px;
+    padding: 6px;  
+}
