@@ -2,36 +2,36 @@ import './ItemCount.css'
 import { useState } from "react";
 import { Button, Container, Row, Col } from 'react-bootstrap';
 
-function ItemCount({stock, initial, onAdd}) {
+function ItemCount({stock, initial, onAdd, unit}) {
     
-    const [unidades, setUnidades] = useState(initial);
-    const [disableBotonMas, setDisableBotonMas] = useState(false);
-    const [disableBotonMenos, setDisableBotonMenos] = useState(true);
+    const [units, setUnidades] = useState(initial);
+    const [disableBtnPlus, setDisableBtnPlus] = useState(false);
+    const [disableBtnLess, setDisableBtnLess] = useState(true);
     
     const sumar = () => {
-        setDisableBotonMenos(false)
-        if (unidades === (stock-1)) {
-            setDisableBotonMas(true)
+        setDisableBtnLess(false)
+        if (units === (stock-1)) {
+            setDisableBtnPlus(true)
+            
         }
-        setUnidades(unidades + 1)
+        setUnidades(units + 1)
     }
 
     const restar = () => {
-        setDisableBotonMas(false)
-        if(unidades === initial) {
-            setDisableBotonMenos(true)
-
+        setDisableBtnPlus(false)
+        if(units === initial) {
+            setDisableBtnLess(true)
         }
-        setUnidades(unidades - 1)
+        setUnidades(units - 1)
     }
 
     return (
         <>
             <Container fluid>
                 <Row xs="auto" md="auto" className="rounded-3 justify-content-center">
-                    <Col><Button variant="outline-primary" size="sm" onClick={sumar} disabled={disableBotonMas}> + </Button></Col>
-                    <Col><p className="contador">{unidades}</p></Col>
-                    <Col><Button variant="outline-primary" size="sm" onClick={restar} disabled={disableBotonMenos} > - </Button></Col>
+                    <Col><Button variant="outline-primary" size="sm" onClick={restar} disabled={disableBtnLess} > - </Button></Col>
+                    <Col><p className="contador">{units}</p></Col>
+                    <Col><Button variant="outline-primary" size="sm" onClick={sumar} disabled={disableBtnPlus}> + </Button></Col>
                 </Row>
             </Container>
         </>

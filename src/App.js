@@ -10,8 +10,7 @@ function App() {
     <div>
       
       <MainBar />
-      <ItemListContainer titulo="Categoria de Productos">
-        </ItemListContainer>      
+      <ItemListContainer catalogo="Categoria de Productos"></ItemListContainer>      
         
     </div>
   );
