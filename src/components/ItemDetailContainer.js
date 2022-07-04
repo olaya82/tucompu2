@@ -31,7 +31,7 @@ function ItemDetailContainer (props) {
                             <ItemDetail productDetail={productFetch}/>
                             {productFetch && <ItemDetail productDetail={productFetch} />}
                         */} 
-                        {productFetch.length && <ItemDetail productDetail={productFetch.length} />}
+                        {productFetch.length && <ItemDetail productDetail={productFetch} />}
                     </Col>
                 </Row>
             </Container>

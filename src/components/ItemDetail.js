@@ -5,8 +5,8 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 function ItemDetail (props, initial, onAdd, unit) {
     
-    const productFetch = props.productFetch;
-    const [units, setUnits] = useState(0);
+    const productFetch = props.productDetail[0];
+    const [units, setUnits] = useState(1);
     const [disableBtnPlus, setDisableBtnPlus] = useState(false);
     const [disableBtnLess, setDisableBtnLess] = useState(true);
     
@@ -21,29 +21,29 @@ function ItemDetail (props, initial, onAdd, unit) {
 
     const lessProduct = () => {
         setDisableBtnPlus(false)
-        if(units === productFetch.initial) {
+        if(units === (initial)) {
             setDisableBtnLess(true)
         }
         setUnits(units - 1)
     }
 
-    console.log(props)
+    console.log(props.imagen)
 
     return (
     <>
-        <Card key={productFetch.id} className="text-center"style={{ width: '18rem' }}>
+        <Card className="text-center"style={{ width: '18rem' }}>
             <Card.Img variant="top" src={require(`../assets/img/${productFetch.imagen}`)} alt="imagen del componente" />
             <Card.Body>
                 <Card.Title>{productFetch.titulo}</Card.Title>
-                <Card.Text>{productFetch.descripcion}</Card.Text>
-                <Card.Text>{productFetch.modelo}</Card.Text>
-                <Card.Text>{productFetch.catalogo}</Card.Text>
-                <Card.Text>{productFetch.marca}</Card.Text>
-                <Card.Text>{productFetch.capacidad}</Card.Text>
-                <Card.Text>{productFetch.tecnologia}</Card.Text>
-                <Card.Text>{productFetch.velocidad}</Card.Text>
-                <Card.Text>{productFetch.cantidad_modulos}</Card.Text>
-                <Card.Text>{productFetch.tipo}</Card.Text>
+                <Card.Text><strong>Descripción: </strong>{productFetch.descripcion}</Card.Text>
+                <Card.Text><strong>Modelo: </strong>{productFetch.modelo}</Card.Text>
+                <Card.Text><strong>Catalogo: </strong>{productFetch.catalogo}</Card.Text>
+                <Card.Text><strong>Marca: </strong>{productFetch.marca}</Card.Text>
+                <Card.Text><strong>Capacidad: </strong>{productFetch.capacidad}</Card.Text>
+                <Card.Text><strong>Tecnologia: </strong>{productFetch.tecnologia}</Card.Text>
+                <Card.Text><strong>Bus: </strong>{productFetch.velocidad}</Card.Text>
+                <Card.Text><strong>Cantidad de modulos: </strong>{productFetch.cantidad_modulos}</Card.Text>
+                <Card.Text><strong>Tipo: </strong>{productFetch.tipo}</Card.Text>
                 <Card.Text className="font-dark">${productFetch.precio}</Card.Text>
                 <Container fluid>
                     <Row xs="auto" md="auto" className="rounded-3 justify-content-center">
@@ -53,7 +53,7 @@ function ItemDetail (props, initial, onAdd, unit) {
                     </Row>
                 </Container>
                     <div className="d-grid gap-2 col-12 mx-auto espacio">
-                        <Button variant="outline-primary" disabled={productFetch.stock===1}>
+                        <Button variant="outline-primary" disabled={productFetch.stock===0}>
                         <FontAwesomeIcon icon={faCartShopping}/> Agregar al Carrito
                         </Button>
                     </div>
