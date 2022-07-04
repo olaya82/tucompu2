@@ -9,7 +9,7 @@
   "capacidad": "8Gb",
   "tecnologia": "DDR4",
   "velocidad": "2666 MHz",
-  "modulos de memoria": "2",
+  "cantidad_modulos": "2",
   "tipo": "Desktop/PC",
   "precio": 6790,
   "stock": 4

@@ -2,10 +2,10 @@ import { React, useEffect, useState } from 'react';
 import './ItemListContainer.css'
 import ItemList from './ItemList';
 
-function ItemListContainer ({ productos, catalogo }) {
+function ItemListContainer (props) {
     
     const [productsFetch, setProductsFetch] = useState([])
-    
+        
     useEffect (() => {
         setTimeout(() => {
             fetch('productos.json', {
@@ -19,12 +19,14 @@ function ItemListContainer ({ productos, catalogo }) {
                 .catch(err => console.log(err))
         }, 3000)
     },[]);
-    
+
+    console.log(props)
+
     return (
         <>
-            <div><p className="font text-center">{catalogo}</p></div>
+            <div><p className="font text-center">Catalogo Productos</p></div>
             <ItemList productos={productsFetch}/>
         </>
-    );
+    )
 }
 export default ItemListContainer;
