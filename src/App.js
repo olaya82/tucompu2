@@ -15,7 +15,8 @@ function App() {
       <ItemListContainer catalogo="Categoria de Productos"></ItemListContainer>
       <ItemDetailContainer catalogo="Producto"/>
       */}    
-      
+      <MainBar />
+      <ItemListContainer catalogo="Categoria de Productos"></ItemListContainer>
       
       <ItemDetailContainer catalogo="Producto"/>
       

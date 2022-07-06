@@ -4,34 +4,34 @@ import { Button, Container, Row, Col } from 'react-bootstrap';
 
 function ItemCount({stock, initial, onAdd, unit}) {
     
-    const [units, setUnidades] = useState(initial);
+    const [units, setUnits] = useState(1);
     const [disableBtnPlus, setDisableBtnPlus] = useState(false);
     const [disableBtnLess, setDisableBtnLess] = useState(true);
     
-    const sumar = () => {
+    const addProduct = () => {
         setDisableBtnLess(false)
         if (units === (stock-1)) {
             setDisableBtnPlus(true)
             
         }
-        setUnidades(units + 1)
+        setUnits(units + 1)
     }
 
-    const restar = () => {
+    const lessProduct = () => {
         setDisableBtnPlus(false)
         if(units === initial) {
             setDisableBtnLess(true)
         }
-        setUnidades(units - 1)
+        setUnits(units - 1)
     }
 
     return (
         <>
             <Container fluid>
                 <Row xs="auto" md="auto" className="rounded-3 justify-content-center">
-                    <Col><Button variant="outline-primary" size="sm" onClick={restar} disabled={disableBtnLess} > - </Button></Col>
+                    <Col><Button variant="outline-primary" size="sm" onClick={lessProduct} disabled={disableBtnLess} > - </Button></Col>
                     <Col><p className="contador">{units}</p></Col>
-                    <Col><Button variant="outline-primary" size="sm" onClick={sumar} disabled={disableBtnPlus}> + </Button></Col>
+                    <Col><Button variant="outline-primary" size="sm" onClick={addProduct} disabled={disableBtnPlus}> + </Button></Col>
                 </Row>
             </Container>
         </>
