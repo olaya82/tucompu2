@@ -1,27 +1,39 @@
 {
   "files": {
-    "main.css": "/tucompu2/static/css/main.f7abe83a.css",
-    "main.js": "/tucompu2/static/js/main.4f3ee6ba.js",
+    "main.css": "/tucompu2/static/css/main.646c917c.css",
+    "main.js": "/tucompu2/static/js/main.4c97a76e.js",
     "static/js/787.878be043.chunk.js": "/tucompu2/static/js/787.878be043.chunk.js",
     "static/media/memoria_2.png": "/tucompu2/static/media/memoria_2.a68f873b6a468b2e6952.png",
     "static/media/memoria_4.png": "/tucompu2/static/media/memoria_4.a2ec3afa129fca90ab25.png",
     "static/media/memoria_6.png": "/tucompu2/static/media/memoria_6.b9605d840ad6583ca4fd.png",
     "static/media/memoria_5.png": "/tucompu2/static/media/memoria_5.08161f289743ced27f56.png",
+    "static/media/motherboard_1.png": "/tucompu2/static/media/motherboard_1.3ed583a3abbd7e923281.png",
     "static/media/memoria_3.png": "/tucompu2/static/media/memoria_3.b0e50d16d2d5365ddf46.png",
+    "static/media/disco_solido_1.png": "/tucompu2/static/media/disco_solido_1.e72737d40adfdbbbb0ca.png",
+    "static/media/placa_video_4.png": "/tucompu2/static/media/placa_video_4.2595fedfe7e4815a7b12.png",
+    "static/media/procesador_3.png": "/tucompu2/static/media/procesador_3.38240a0f587bf1928ae4.png",
+    "static/media/motherboard_2.png": "/tucompu2/static/media/motherboard_2.4ef2d2110f3938962505.png",
+    "static/media/placa_video_1.png": "/tucompu2/static/media/placa_video_1.e9b0aee506fa098245c5.png",
+    "static/media/placa_video_3.png": "/tucompu2/static/media/placa_video_3.fa2f492e62e56fbfec3a.png",
+    "static/media/placa_video_2.png": "/tucompu2/static/media/placa_video_2.8bfd83cacdf70b9269e1.png",
     "static/media/memoria_1.png": "/tucompu2/static/media/memoria_1.c0d93e0e1b2e1d7dfaa2.png",
+    "static/media/procesador_2.png": "/tucompu2/static/media/procesador_2.9f968fc6d063f4430fea.png",
+    "static/media/procesador_4.png": "/tucompu2/static/media/procesador_4.14e39df3d9562daa72f9.png",
+    "static/media/motherboard_3.png": "/tucompu2/static/media/motherboard_3.f523898c6dd574b9e98f.png",
     "static/media/memoria_8.png": "/tucompu2/static/media/memoria_8.e0528b057134096d2e10.png",
+    "static/media/procesador_1.png": "/tucompu2/static/media/procesador_1.f17a95fe030a5505468a.png",
     "static/media/memoria_7.png": "/tucompu2/static/media/memoria_7.dab8b69e0d6cb655b4f5.png",
     "static/media/memoria_ram.jpg": "/tucompu2/static/media/memoria_ram.1ccc12e29ee7a65c9feb.jpg",
     "static/media/logo_uno.png": "/tucompu2/static/media/logo_uno.5943b82c199b5846c573.png",
     "static/media/logo_dos.png": "/tucompu2/static/media/logo_dos.34fd3931a38c5dc699d7.png",
     "static/media/logo_tres.png": "/tucompu2/static/media/logo_tres.4ef78e9c57924a6d8500.png",
     "index.html": "/tucompu2/index.html",
-    "main.f7abe83a.css.map": "/tucompu2/static/css/main.f7abe83a.css.map",
-    "main.4f3ee6ba.js.map": "/tucompu2/static/js/main.4f3ee6ba.js.map",
+    "main.646c917c.css.map": "/tucompu2/static/css/main.646c917c.css.map",
+    "main.4c97a76e.js.map": "/tucompu2/static/js/main.4c97a76e.js.map",
     "787.878be043.chunk.js.map": "/tucompu2/static/js/787.878be043.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7abe83a.css",
-    "static/js/main.4f3ee6ba.js"
+    "static/css/main.646c917c.css",
+    "static/js/main.4c97a76e.js"
   ]
 }
