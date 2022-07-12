@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tucompu2/static/css/main.646c917c.css",
-    "main.js": "/tucompu2/static/js/main.f20f2b3d.js",
+    "main.css": "/tucompu2/static/css/main.2502dd44.css",
+    "main.js": "/tucompu2/static/js/main.7728b402.js",
     "static/js/787.878be043.chunk.js": "/tucompu2/static/js/787.878be043.chunk.js",
     "static/media/memoria_2.png": "/tucompu2/static/media/memoria_2.a68f873b6a468b2e6952.png",
     "static/media/memoria_4.png": "/tucompu2/static/media/memoria_4.a2ec3afa129fca90ab25.png",
@@ -28,12 +28,12 @@
     "static/media/logo_dos.png": "/tucompu2/static/media/logo_dos.34fd3931a38c5dc699d7.png",
     "static/media/logo_tres.png": "/tucompu2/static/media/logo_tres.4ef78e9c57924a6d8500.png",
     "index.html": "/tucompu2/index.html",
-    "main.646c917c.css.map": "/tucompu2/static/css/main.646c917c.css.map",
-    "main.f20f2b3d.js.map": "/tucompu2/static/js/main.f20f2b3d.js.map",
+    "main.2502dd44.css.map": "/tucompu2/static/css/main.2502dd44.css.map",
+    "main.7728b402.js.map": "/tucompu2/static/js/main.7728b402.js.map",
     "787.878be043.chunk.js.map": "/tucompu2/static/js/787.878be043.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.646c917c.css",
-    "static/js/main.f20f2b3d.js"
+    "static/css/main.2502dd44.css",
+    "static/js/main.7728b402.js"
   ]
 }
