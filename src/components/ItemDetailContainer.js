@@ -2,26 +2,27 @@ import { React, useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './ItemDetailContainer.css'
 import ItemDetail from './ItemDetail';
+import { useParams } from 'react-router-dom'
 
 function ItemDetailContainer (props) {
     
+    const params = useParams()
     const [productFetch, setProductFetch] = useState([])
     
     useEffect (() => {
-        setTimeout(() => {
-            fetch('productos.json', {
-                headers : {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-            })    
-                .then(resp => resp.json())
-                .then(productos => setProductFetch(productos.filter( i => i.id === 1)))
-        }, 3000)
-    },);
-
-    console.log(productFetch)
-
+        
+            setTimeout(() => {
+                fetch('/productos.json', {
+                    headers : {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    }
+                })    
+                    .then(resp => resp.json())
+                    .then(productos => setProductFetch(productos.filter( i => i.id === parseInt(params.itemid))))
+            }, 3000)
+        }, );
+    
     return (
         <>
             <Container fluid>

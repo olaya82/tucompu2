@@ -10,7 +10,7 @@ function ItemDetail (props, initial, onAdd, unit) {
     
     return (
     <>
-        <Card className="text-center"style={{ width: '18rem' }}>
+        <Card id={props.id} className="text-center"style={{ width: '18rem' }}>
             <Card.Img variant="top" src={require(`../assets/img/${productFetch.imagen}`)} alt="imagen del componente" />
             <Card.Body>
                 <Card.Title>{productFetch.titulo}</Card.Title>

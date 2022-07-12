@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react';
 import ItemList from '../components/ItemList';
 
-function TiendaTodos(props) {
+function Productos(props) {
 
     const [productsFetch, setProductsFetch] = useState([])
         
@@ -29,4 +29,4 @@ function TiendaTodos(props) {
     )
 }
 
-export default TiendaTodos;
+export default Productos;

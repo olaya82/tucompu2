@@ -10,15 +10,16 @@ function ItemList(props) {
         <>
         <Container fluid>
             <Row xs="auto" md="auto" className="p-3 bg-light rounded-3 justify-content-center">
-                    {props.productos.map((producto) => 
-                        <Item titulo={producto.titulo}
+                    {props.productos.map((producto) => (
+                        <Item   id={producto.id} 
+                            titulo={producto.titulo}
                             descripcion={producto.descripcion}
                             catalogo={producto.catalogo}
                             imagen={producto.imagen} 
                             precio={producto.precio}
                             stock={producto.stock}
                         />
-                    )}
+                    ))}
                 </Row>
         </Container>
         </>

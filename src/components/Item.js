@@ -2,8 +2,12 @@ import { React } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { Col, Card, Button } from 'react-bootstrap';
+import ItemDetailContainer from './ItemDetailContainer';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Item (props) {
+    
+    const navigate = useNavigate();
     
     return (
     <>
@@ -15,7 +19,7 @@ function Item (props) {
                     <Card.Text>{props.descripcion}</Card.Text>
                     <Card.Text className="font-dark">${props.precio}</Card.Text>
                         <div className="d-grid gap-2 col-12 mx-auto espacio">
-                            <Button variant="outline-primary">
+                            <Button variant="outline-primary" onClick={() => navigate(`/detalle/${props.id}`)}>
                                 <FontAwesomeIcon icon={faEye} /> Ver detalles
                             </Button>
                             
