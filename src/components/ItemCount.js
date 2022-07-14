@@ -10,20 +10,17 @@ function ItemCount({stock, initial, onAdd, unit}) {
     
     const addProduct = () => {
         setDisableBtnLess(false)
-        if (units === (stock-1)) {
-            setDisableBtnPlus(true)
-            
+        if (units < stock) {
+            setUnits(units + 1);
         }
-        setUnits(units + 1)
-    }
-
+    };
+    
     const lessProduct = () => {
         setDisableBtnPlus(false)
-        if(units === initial) {
-            setDisableBtnLess(true)
+        if (units > 0) {
+            setUnits(units - 1);
         }
-        setUnits(units - 1)
-    }
+    };
 
     return (
         <>

@@ -3,10 +3,12 @@ import { Card, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import ItemCount from './ItemCount';
+import { useNavigate } from 'react-router-dom';
 
 function ItemDetail (props, initial, onAdd, unit) {
     
     const productFetch = props.productDetail[0];
+    const navigate = useNavigate();
     
     return (
     <>
@@ -24,13 +26,13 @@ function ItemDetail (props, initial, onAdd, unit) {
                 <Card.Text><strong>Cantidad de modulos: </strong>{productFetch.cantidad_modulos}</Card.Text>
                 <Card.Text><strong>Tipo: </strong>{productFetch.tipo}</Card.Text>
                 <Card.Text className="font-dark">${productFetch.precio}</Card.Text>
-                    <ItemCount/>
+                    <ItemCount stock={productFetch.stock} initial='1' onAdd={onAdd}/>
                     <div className="d-grid gap-2 col-12 mx-auto espacio">
-                        <Button variant="outline-primary" disabled={productFetch.stock===0}>
+                        <Button variant="outline-primary" disabled={productFetch.stock===0} onClick={() => navigate(`/cart`)} >
                         <FontAwesomeIcon icon={faCartShopping}/> Agregar al Carrito
                         </Button>
                     </div>
-                    <p className="stock">{productFetch.stock > 0 ? `Stock: ${productFetch.stock}` : `Sin Stock`}</p>
+                    <p className="stock">{productFetch.stock > 1 ? `Stock: ${productFetch.stock}` : `Sin Stock`}</p>
             </Card.Body>
         </Card>
     </>

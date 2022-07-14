@@ -38,7 +38,7 @@ function MainBar() {
                         <Nav.Link><NavLink to="/contacto">Contacto</NavLink></Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#cartProd"><CartWidget /></Nav.Link>
+                        <Nav.Link href="/cart"><CartWidget /></Nav.Link>
                         </Nav>
                 </Navbar.Collapse>
             </Container>

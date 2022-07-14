@@ -7,6 +7,7 @@ import MainBar from './components/MainBar';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import React from 'react';
 import Home from './pages/Home';
+import Cart from './pages/Cart';
 import Productos from './pages/Productos';
 import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
@@ -50,6 +51,7 @@ function App() {
         <Route path="/productos" element={<Productos />}></Route>
         <Route path="/productos/:categoria" element={<ItemListContainer />}></Route>
         <Route path="/detalle/:itemid" element={<ItemDetailContainer />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
 
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
